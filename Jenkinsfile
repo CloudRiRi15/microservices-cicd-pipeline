@@ -16,7 +16,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                        sh "docker push adijcloudriri15/checkoutservice:latest "
+                        sh "docker push cloudriri15/checkoutservice:latest "
                     }
                 }
             }
